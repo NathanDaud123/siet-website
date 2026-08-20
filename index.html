@@ -181,7 +181,7 @@
 				
 				/* Info Text Styling (Aman) */
 				.keynote-info {
-				    text-align: center;
+				    text-align: center !important;
 				}
 				
 				.keynote-name {
@@ -235,7 +235,7 @@
 				
 				.speaker-header h3 {
 				    color: var(--navy-sentrin, #2C527A);
-				    margin-top: 0;
+				    margin-top: -10px !important;
 				    margin-bottom: 5px;
 				    font-size: 1.8rem;
 				    font-weight: 700;
@@ -284,7 +284,7 @@
 				        max-width: 250px;
 				    }
 				    .speaker-header {
-				        text-align: center;
+				        text-align: center !important;
 				    }
 				    .speaker-header .divider {
 				        margin: 20px auto;
@@ -394,6 +394,14 @@
 				}
 			</style>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  @media (min-width: 992px) {
+    .multiline-menu-item { text-align: center !important; line-height: 1.2 !important; display: inline-block !important; vertical-align: middle !important; margin-top: -10px !important; }
+  }
+  @media (max-width: 991px) {
+    .multiline-menu-item { text-align: left !important; }
+  }
+</style>
 </head>
  <body class="stretched">
  			<div id="wrapper" class="clearfix">
@@ -439,7 +447,7 @@
 										<li><a href="#"><div>Special Issues</div></a></li>
 									</ul>
 								</li>
-								<li><a href="#" class="sf-with-ul"><div>General Information</div></a>
+								<li><a href="#" class="sf-with-ul"><div class="multiline-menu-item">General<br>Information</div></a>
 									<ul>
 										<li><a href="keynote-speakers.html"><div>Keynote Speakers</div></a></li>
 										<li><a href="registration.html"><div>Registration</div></a></li>
@@ -450,7 +458,7 @@
 										<li><a href="#"><div>dll</div></a></li>
 									</ul>
 								</li>
-								<li><a href="#" class="sf-with-ul"><div>Previous Events</div></a>
+								<li><a href="#" class="sf-with-ul"><div class="multiline-menu-item">Previous<br>Events</div></a>
 									<ul>
 										<li><a href="https://siet.ub.ac.id/event/siet26" target="_blank"><div>The 11th SIET 2026</div></a></li>
 										<li><a href="https://siet.ub.ac.id/event/siet25" target="_blank"><div>The 10th SIET 2025</div></a></li>
@@ -465,7 +473,7 @@
 										<li><a href="https://siet.ub.ac.id/event/siet16" target="_blank"><div>The 1st SIET 2016</div></a></li>
 									</ul>
 								</li>
-								<li><a href="#"><div>Co-Located Events</div></a></li>
+								<li><a href="colocated-events.html"><div class="multiline-menu-item">Co-Located<br>Events</div></a></li>
 								<li><a href="contact.html"><div>Contact</div></a></li>
 								<li><a data-toggle="collapse" href="#form-search"><div style="font-size: 1.2em;">&#128269;</div></a></li>
 							</ul>
